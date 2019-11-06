@@ -1,0 +1,186 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .logo {
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -20%; /* Half the height */
+        margin-left: -20%; /* Half the width */
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    
+    /* NAV */
+
+    nav {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    
+    .nav-items {
+        flex-direction: row;
+        background-color: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-items li {
+        padding: 0 0 0 5vw;
+        margin: 0;
+    }
+
+    .nav-items a:hover {
+        padding-bottom: 1rem;
+        border-bottom: 1px white solid;
+    }
+
+
+    /* HERO */
+
+    .logo {
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -15%; /* Half the height */
+        margin-left: -15%; /* Half the width */
+    }
+
+
+    /* SECTION - general */
+
+    .section {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .sub-section {
+        margin-right: 3rem;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* ABOUT */
+
+    .about img {
+        width: 50%;
+    }
+
+
+    /* TAPROOM */
+
+    .map {
+        height: 300px;
+        width: 50%;
+    }
+
+
+    /* BEER */
+
+
+    /* CONTACT */
+
+    .contact .flex {
+        justify-content: flex-start;
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    
+    /* NAV */
+
+    .icon-menu {
+        display: none;
+    }
+
+    .nav-expanded{
+        display: block!important;
+        float: right;
+    }
+
+
+    /* HERO */
+
+    .logo {
+        width: 20%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -10%;
+        margin-left: -10%; 
+    }
+
+    /* SECTIONS- general */
+
+    .section {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    
+    /* ABOUT */
+
+
+    /* TAPROOM */
+
+
+    /* BEER */
+
+    .beers .sub-section {
+        margin-right: 0;
+    }
+
+    .beer {
+        margin-right: 3rem;
+    }
+
+    .beer:last-of-type {
+        margin-right: 0;
+    }
+
+    .beer-1, .beer-2, .beer-3, .beer-4 {
+        display: block;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+
+    /* CONTACT */
+    
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .flex-column {
+        display: flex;
+        flex-direction: row;
+    }
+
+}

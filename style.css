@@ -1,0 +1,270 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 100;
+}
+
+h1 {
+    text-transform: lowercase;
+    font-size: 2rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+/* =========================================
+NAV
+========================================= */
+
+nav {
+    color: #ffffff;
+    height: 3rem;
+    padding:2rem;
+    font-size: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    float: right;
+    clear: both;
+    padding: 2rem 0 2rem 0;
+}
+
+.nav-items li {
+    padding-right: 1rem;
+    padding-top: 1rem;
+    text-align: right;
+}
+
+.nav-company {
+    float: left;
+}
+
+.icon-menu {
+    float: right;
+    font-size: 2rem;
+    margin-top: -.4rem;
+}
+
+.nav-expanded {
+    display: none;
+}
+
+
+/* =========================================
+HERO
+========================================= */
+
+#hero {
+    background-image: url("https://images.unsplash.com/photo-1550868142-97bfb991bbd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60.com/photo-1487615215796-62477c922fa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25%; 
+    margin-left: -25%; 
+}
+
+.icon-arrow-down {
+    color: #ffffff;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 2rem;
+    display: inline-block;
+    left: 50%;
+    margin-left: -1rem;
+}
+
+
+/* =========================================
+SECTIONS - GENERAL
+========================================= */
+
+.section {
+    margin: 3rem 1rem 1rem 1rem;
+}
+
+.sub-section {
+    margin: 0 1rem;
+    margin-bottom: 2rem; 
+}
+
+.sub-section p {
+    margin: .25rem;
+}
+
+.sub-section h3 {
+    margin-bottom: .5rem;
+}
+
+/* =========================================
+ABOUT
+========================================= */
+
+.about img {
+    width: 100%;
+}
+
+/* =========================================
+TAPROOM
+========================================= */
+
+.map {
+    height: 400px;
+    width: 100%;
+  }
+
+/* =========================================
+BEER
+========================================= */
+
+.beers img {
+    width: 30%;
+    position: relative;
+    left: 50%;
+    margin-left: -15%;
+}
+
+.shadow {
+    margin-top: 3%;
+    height: 30px;
+    width: 30%;
+    background: radial-gradient(closest-side, #acacac, #ffffff);
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    margin-left: -15%;
+}
+
+.in-view.bounce {
+    animation: bounce 4s ease-in infinite;
+}
+
+.in-view.shadow-shrink {
+    animation: shadow-shrink 4s ease-in infinite;
+}
+ 
+@keyframes bounce {
+    0%, 100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 10px;
+    }
+}
+
+@keyframes shadow-shrink {
+    0%, 100% {
+        width: 30%;
+    }
+    50% {
+        width: 25%;
+        margin-left: -12.5%;
+        opacity: .5;
+    }
+}
+
+.arrows {
+    position: absolute;
+    margin-top: 25%;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+    color: #a7a7a7;
+    font-size: 2rem;
+    
+}
+.right-arrow{
+    position: absolute;
+    right: 0;
+}
+
+.left-arrow{
+    position: absolute;
+    left: 0;
+}
+
+.beer-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.beer-type h5 {
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+/* =========================================
+CONTACT
+========================================= */
+
+/* =========================================
+FOOTER
+========================================= */
+
+footer {
+    margin-top: 4rem;
+}
+
+.social-icons {
+    background: url("https://images.unsplash.com/photo-1550868142-97bfb991bbd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60.com/photo-1487615215796-62477c922fa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.social-icons a:nth-child(1):hover {
+    color:#bc2a8d;
+}
+
+.social-icons a:nth-child(2):hover {
+    color: #6699FF;
+}
+
+.social-icons a:nth-child(3):hover {
+    color:#3b5998;
+}
+
+
+
+
+
+
+
+
+ 
+
+
