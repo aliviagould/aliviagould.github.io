@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <!-- OpenLayers map API js -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.0/build/ol.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+
+  <title>Ninth Wave Brewery</title>
+
+</head>
+
+<body>
+
+<div id="hero">
+    <nav>
+        <div class="nav-collapsed">
+            <a href="#" class="nav-company">ninth wave brewery</a>
+            <ion-icon class="icon-menu" name="menu"></ion-icon>
+        </div>
+        <div class="nav-expanded">
+            <ul class="nav-items">
+                <li><a href="#about">about</a></li>
+                <li><a href="#taproom">taproom</a></li>
+                <li><a href="#beers">beer</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <img class="logo" src="logo-white.png" alt="ninth waver brewery logo"> 
+    <ion-icon class="icon-arrow-down" name="arrow-dropdown-circle"></ion-icon>
+</div>
+
+<div class="about section" id="about">
+    <h1>Ninth Wave Brewery</h1>
+    <div class="flex">
+        <div class="sub-section">
+            <p>blah blah blah short thing about how we brew really good beer it's simple lol blah blah blah short thing about how we brew really good beer it's simple lol blah blah blah short thing about how we brew really good beer it's simple lol</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1545878587-bd777063c414?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60">
+    </div>
+</div>
+
+
+<div class="taproom section" id="taproom">
+    <h1>Taproom</h1>
+    <div class="flex">
+        <div class="flex-column">
+            <div class="sub-section">
+                    <h3>Hours</h3>
+                    <p>Monday Closed</p>
+                    <p>Tues - Thurs 12pm-6pm</p>
+                    <p>Friday-Sunday 11am-8pm</p>
+                </div>
+                <div class="sub-section">
+                    <h3>Location</h3>
+                    <p>114 High Street <br> Kennebunk, ME <br> 04043 </p>
+                </div>
+        </div>
+        
+            <div id="map" class="map"></div>
+            <script type="text/javascript">
+                var map = new ol.Map({
+                target: 'map',
+                layers: [
+                    new ol.layer.Tile({
+                    source: new ol.source.OSM()
+                    })
+                ],
+                view: new ol.View({
+                    center: ol.proj.fromLonLat([-70.564860, 43.382900]),
+                    zoom: 10
+                })
+                });
+            </script>
+        
+    </div>   
+</div>
+
+<div id="beers" class="beers section">
+    <h1>Beer</h1>
+
+    <div class="arrows">
+            <ion-icon class="left-arrow" name="arrow-dropleft-circle"></ion-icon>
+            <ion-icon class="right-arrow" name="arrow-dropright-circle"></ion-icon>
+    </div>
+
+    <div class="flex">
+
+
+    <div class="beer-1 beer show">
+        <img class="animation-element bounce" src="beer-mock-up.png" alt="party wave beer can">
+        <div class="animation-element shadow-shrink shadow"></div>
+        <div class="sub-section">
+            <h3>Party Wave IPA</h3>
+            <div class="beer-type">
+                <h5>IPA</h5>
+                <h5>6.8%</h5>
+            </div>
+            
+            <p>blah blah blah here's some info about the beer blah blah blah</p>
+        </div>
+    </div>
+
+    <div class="beer-2 beer hide">
+            <img class="animation-element bounce" src="boogie-board-beer.png" alt="boogie board beer can">
+            <div class="animation-element shadow-shrink shadow"></div>
+            <div class="sub-section">
+                <h3>BOOGIE BOARD</h3>
+                <div class="beer-type">
+                    <h5>PALE ALE</h5>
+                    <h5>4.7%</h5>
+                </div>
+                
+                <p>blah blah blah here's some info about the beer blah blah blah</p>
+            </div>
+    </div>
+
+    <div class="beer-3 beer hide">
+            <img class="animation-element bounce" src="beer-4.png" alt="slack water beer can">
+            <div class="animation-element shadow-shrink shadow"></div>
+            <div class="sub-section">
+                <h3>slack water</h3>
+                <div class="beer-type">
+                    <h5>AMBER ALE</h5>
+                    <h5>5.9%</h5>
+                </div>
+                
+                <p>blah blah blah here's some info about the beer blah blah blah</p>
+            </div>
+    </div>
+
+    <div class="beer-4 beer hide">
+            <img class="animation-element bounce" src="beer-hang-ten.png" alt="hang ten beer can">
+            <div class="animation-element shadow-shrink shadow"></div>
+            <div class="sub-section">
+                <h3>HANG TEN</h3>
+                <div class="beer-type">
+                    <h5>LAGER</h5>
+                    <h5>6.0%</h5>
+                </div>
+                <p>blah blah blah here's some info about the beer blah blah blah</p>
+            </div>
+        </div>
+
+        </div>
+
+</div>
+
+<div class="contact section" id="contact">
+    <h1>Contact</h1>
+    <div class="flex">
+        <div class="sub-section">
+                <h3>Phone</h3>
+                <p>(207)-604-0794</p>
+            </div>
+            <div class="sub-section">
+                <h3>Email</h3>
+                <p>info@ninthwavebrewery.com</p>
+            </div>
+    </div>
+    
+
+</div>
+
+
+<footer>
+    <div class="social-icons">
+        <a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="https://www.facebook.com"> <ion-icon name="logo-facebook"></ion-icon></a>
+</div>
+        
+</footer>
+
+
+<!-- IONICONS -->
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>
